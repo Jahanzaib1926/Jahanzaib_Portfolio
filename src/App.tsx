@@ -1,6 +1,7 @@
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { CustomCursor } from './components/CustomCursor';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
@@ -9,6 +10,7 @@ import { Contact } from './pages/Contact';
 function App() {
   return (
     <ThemeProvider>
+      <CustomCursor />
       <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors">
         <Navbar />
         <main className="flex-grow">
